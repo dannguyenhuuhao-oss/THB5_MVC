@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Thêm thú bông";
+}
+
+<h2>THÊM THÚ BÔNG</h2>
+
+<form method="post">
+
+    <table border="1" cellpadding="8">
+
+        <tr>
+            <td>Tên thú bông</td>
+            <td>
+                <input type="text" name="tenThuBong">
+            </td>
+        </tr>
+
+        <tr>
+            <td>Loại</td>
+            <td>
+                <select name="loai">
+                    <option>Gấu bông</option>
+                    <option>Thỏ bông</option>
+                    <option>Mèo bông</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Giá</td>
+            <td>
+                <input type="number" name="gia">
+            </td>
+        </tr>
+
+        <tr>
+            <td>Mô tả</td>
+            <td>
+                <textarea name="moTa"></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+                <button type="submit">Thêm</button>
+            </td>
+        </tr>
+
+    </table>
+
+</form>

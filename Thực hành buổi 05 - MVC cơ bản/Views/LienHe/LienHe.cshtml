@@ -1,0 +1,145 @@
+﻿@{
+    ViewData["Title"] = "Liên hệ";
+}
+
+<h2>LIÊN HỆ</h2>
+
+<form method="post" action="/LienHe">
+
+    <table border="1" cellpadding="5" cellspacing="0">
+
+        <tr>
+            <td colspan="2">
+                <h3>Thông tin liên hệ</h3>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="chuDe">
+                    Quý khách đang quan tâm về
+                </label>
+            </td>
+
+            <td>
+                <select id="chuDe" name="chuDe">
+
+                    <option value="">
+                        Chọn chủ đề
+                    </option>
+
+                    <option value="Tư vấn">
+                        Tư vấn
+                    </option>
+
+                    <option value="Khiếu nại - Phản ánh">
+                        Khiếu nại - Phản ánh
+                    </option>
+
+                    <option value="Hợp tác với thế giới di động">
+                        Hợp tác với thế giới di động
+                    </option>
+
+                    <option value="Góp ý cải tiến">
+                        Góp ý cải tiến
+                    </option>
+
+                </select>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>
+                <label for="tieuDe">
+                    Tiêu đề *
+                </label>
+            </td>
+
+            <td>
+                <input type="text"
+                       id="tieuDe"
+                       name="tieuDe"
+                       required>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>
+                <label for="noiDung">
+                    Nội dung *
+                </label>
+            </td>
+
+            <td>
+                <textarea id="noiDung"
+                          name="noiDung"
+                          rows="10"
+                          cols="40"
+                          required></textarea>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>
+                <label for="hoTen">
+                    Họ và Tên *
+                </label>
+            </td>
+
+            <td>
+                <input type="text"
+                       id="hoTen"
+                       name="hoTen"
+                       required>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>
+                <label for="email">
+                    Địa chỉ Email
+                </label>
+            </td>
+
+            <td>
+                <input type="email"
+                       id="email"
+                       name="email">
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>
+                <label for="soDienThoai">
+                    Số điện thoại
+                </label>
+            </td>
+
+            <td>
+                <input type="tel"
+                       id="soDienThoai"
+                       name="soDienThoai">
+            </td>
+        </tr>
+
+
+        <tr>
+            <td></td>
+
+            <td style="text-align:right">
+
+                <button type="submit">
+                    OK
+                </button>
+
+            </td>
+        </tr>
+
+    </table>
+
+</form>
